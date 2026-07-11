@@ -1,5 +1,7 @@
 # amu-governance
 
+[![DOI](https://zenodo.org/badge/1280474791.svg)](https://doi.org/10.5281/zenodo.21302744)
+
 **Lineage-gated shared memory for multi-agent analytics.**
 
 Shared memory across AI agents improves efficiency but introduces two
@@ -127,7 +129,8 @@ See `CITATION.cff`, or:
   author  = {Venkata Sangaraju and Sudhir Vissa},
   title   = {amu-governance: Lineage-Gated Shared Memory for Multi-Agent Analytics},
   year    = {2026},
-  url     = {https://github.com/sangaraju1988/amu-governance}
+  url     = {https://github.com/sangaraju1988/amu-governance},
+  doi     = {10.5281/zenodo.21302744}
 }
 ```
 

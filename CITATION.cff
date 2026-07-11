@@ -9,6 +9,11 @@ authors:
 version: 0.1.0
 date-released: 2026-07-11
 repository-code: "https://github.com/sangaraju1988/amu-governance"
+doi: 10.5281/zenodo.21302744
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21302744
+    description: "Archived snapshot of version 0.1.0"
 license: MIT
 type: software
 preferred-citation:
