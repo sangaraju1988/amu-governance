@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the paper it accompanies."
+title: "amu-governance: Lineage-Gated Shared Memory for Multi-Agent Analytics"
+authors:
+  - family-names: Sangaraju
+    given-names: Venkata
+  - family-names: Vissa
+    given-names: Sudhir
+version: 0.1.0
+date-released: 2026-07-11
+repository-code: "https://github.com/sangaraju1988/amu-governance"
+license: MIT
+type: software
+preferred-citation:
+  type: article
+  title: "Lineage-Aware Memory Governance for Enterprise AI Agents"
+  authors:
+    - family-names: Sangaraju
+      given-names: Venkata
+    - family-names: Vissa
+      given-names: Sudhir
+  year: 2026
