@@ -1,6 +1,6 @@
 # amu-governance
 
-[![DOI](https://zenodo.org/badge/1280474791.svg)](https://doi.org/10.5281/zenodo.21302744)
+[![DOI](https://zenodo.org/badge/1280474791.svg)](https://doi.org/10.5281/zenodo.21302744) [![Paper](https://img.shields.io/badge/IEEE%20Access-10.1109%2FACCESS.2026.3730363-00629B)](https://doi.org/10.1109/ACCESS.2026.3730363)
 
 **Lineage-gated shared memory for multi-agent analytics.**
 
@@ -17,10 +17,13 @@ instead of gating on static content/access labels the way existing governed
 shared-memory systems do.
 
 This is the reference implementation accompanying the paper *"Lineage-Aware
-Memory Governance for Enterprise AI Agents"* (Sangaraju & Vissa, 2026). The
-paper's full experiment/benchmark suite lives in a separate research
-repository: https://github.com/sangaraju1988/Lineage-Aware-Memory. This
-repository contains only the reusable software.
+Memory Governance: A Derivation-Gated Framework for Privacy-Preserving
+Column-Level Access Control in Enterprise AI Agents"* (Sangaraju & Vissa),
+published in [IEEE Access](https://doi.org/10.1109/ACCESS.2026.3730363)
+(Early Access, open access). The paper's full experiment/benchmark suite
+lives in a separate research repository:
+https://github.com/sangaraju1988/Lineage-Aware-Memory. This repository
+contains only the reusable software.
 
 ## Install
 
@@ -122,7 +125,21 @@ experiment/reproduction code.
 
 ## Citation
 
-See `CITATION.cff`, or:
+See `CITATION.cff`, or cite the paper directly:
+
+```bibtex
+@article{sangaraju2026lineage,
+  author  = {Venkata Sangaraju and Sudhir Vissa},
+  title   = {Lineage-Aware Memory Governance: A Derivation-Gated Framework
+             for Privacy-Preserving Column-Level Access Control in
+             Enterprise AI Agents},
+  journal = {IEEE Access},
+  year    = {2026},
+  doi     = {10.1109/ACCESS.2026.3730363}
+}
+```
+
+To cite this software specifically (e.g. a particular version you built on):
 
 ```bibtex
 @software{sangaraju2026amu,
