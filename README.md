@@ -1,6 +1,6 @@
 # amu-governance
 
-[![DOI](https://zenodo.org/badge/1280474791.svg)](https://doi.org/10.5281/zenodo.21302744) [![Paper](https://img.shields.io/badge/IEEE%20Access-10.1109%2FACCESS.2026.3730363-00629B)](https://doi.org/10.1109/ACCESS.2026.3730363)
+[![DOI](https://zenodo.org/badge/1280474791.svg)](https://doi.org/10.5281/zenodo.21302744) [![Paper](https://img.shields.io/badge/IEEE%20Access-10.1109%2FACCESS.2026.3730363-00629B)](https://doi.org/10.1109/ACCESS.2026.3730363) [![PyPI](https://img.shields.io/pypi/v/amu-governance.svg)](https://pypi.org/project/amu-governance/)
 
 **Lineage-gated shared memory for multi-agent analytics.**
 
@@ -28,11 +28,18 @@ contains only the reusable software.
 ## Install
 
 ```bash
-pip install -e .          # from a local clone, until published to PyPI
+pip install amu-governance
 ```
 
 Requires Python 3.9+ and [sqlglot](https://github.com/tobymao/sqlglot)
 (installed automatically) for the optional SQL lineage extractor.
+
+To work from a local clone instead (e.g. to run the tests or modify the
+source):
+
+```bash
+pip install -e .
+```
 
 ## Quick start
 
