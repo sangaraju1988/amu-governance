@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "amu-governance"
-version = "0.1.0"
+version = "0.1.1"
 description = "Lineage-gated shared memory for multi-agent analytics: block cross-department data leakage and catch silent metric-definition conflicts."
 readme = "README.md"
 requires-python = ">=3.9"

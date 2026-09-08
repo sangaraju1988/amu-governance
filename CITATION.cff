@@ -6,8 +6,8 @@ authors:
     given-names: Venkata
   - family-names: Vissa
     given-names: Sudhir
-version: 0.1.0
-date-released: 2026-07-11
+version: 0.1.1
+date-released: 2026-09-08
 repository-code: "https://github.com/sangaraju1988/amu-governance"
 doi: 10.5281/zenodo.21302744
 identifiers:
