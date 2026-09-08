@@ -1,4 +1,5 @@
 from amu_governance.sql_lineage import extract_lineage_from_sql, lineage_from_sql, lineage_summary
+from amu_governance.policy import GovernancePolicy
 
 
 def test_extract_simple_alias():
@@ -40,3 +41,26 @@ def test_lineage_summary_formats_readably():
     steps = [{"table": "orders", "columns": ["orderid", "shipcountry"]}]
     assert "orders" in lineage_summary(steps)
     assert lineage_summary([]) == "(no lineage extracted)"
+
+
+def test_unqualified_sensitive_column_in_multi_table_query_is_not_dropped():
+    """Regression test: an unqualified column reference in a comma-join or
+    any multi-table query without full table-qualification must still be
+    visible to the sensitivity gate. Before this fix, `income` here was
+    silently dropped from the lineage, so a requester without `income`
+    access would have been served the result -- the opposite of "fail
+    closed"."""
+    sql = """
+        SELECT income, t.amount
+        FROM customer_pii c, transactions t
+        WHERE c.customer_id = t.customer_id
+    """
+    lineage = lineage_from_sql(sql)
+    assert "income" in lineage.all_columns()
+
+    policy = GovernancePolicy(
+        sensitive_columns={"income"},
+        department_permissions={"Marketing": {"amount", "customer_id"}},
+    )
+    assert "income" in lineage.sensitive_columns(policy)
+    assert lineage.sensitive_columns(policy) - policy.permitted_columns("Marketing")
